@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "642c929e-91c0-4da2-be4b-23c03ee90abb",
+		"name": "Inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13075691"
+	},
+	"item": [
+		{
+			"name": "Find Slips Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/?validationStatus=Verified&confirmationStatus=Confirmed,Rejected&cedant=HYPER NON VIE ASSURANCE,KIED Assur,Paix assur&publishedDate=2020-10-26&confirmationDate=2020-10-28&editedPeriod=2020-02-05&branchName=AUTOMOBILE,TRANSPORT,VIE&companyType=not life, life&region=CIMA AFRIQUE CENTRALE&country=COTE D'IVOIRE&group=NSIA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "validationStatus",
+							"value": "Verified"
+						},
+						{
+							"key": "confirmationStatus",
+							"value": "Confirmed,Rejected"
+						},
+						{
+							"key": "cedant",
+							"value": "HYPER NON VIE ASSURANCE,KIED Assur,Paix assur"
+						},
+						{
+							"key": "publishedDate",
+							"value": "2020-10-26"
+						},
+						{
+							"key": "confirmationDate",
+							"value": "2020-10-28"
+						},
+						{
+							"key": "editedPeriod",
+							"value": "2020-02-05"
+						},
+						{
+							"key": "branchName",
+							"value": "AUTOMOBILE,TRANSPORT,VIE"
+						},
+						{
+							"key": "companyType",
+							"value": "not life, life"
+						},
+						{
+							"key": "region",
+							"value": "CIMA AFRIQUE CENTRALE"
+						},
+						{
+							"key": "country",
+							"value": "COTE D'IVOIRE"
+						},
+						{
+							"key": "group",
+							"value": "NSIA"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

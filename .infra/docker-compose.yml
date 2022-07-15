@@ -5,8 +5,24 @@ services:
     image: mongo:5.0
     ports:
       - 27017:27017
+    networks:
+      - spring-cloud-network
     volumes:
       - ../data/mongo:/data/db
     environment:
       - MONGO_INITDB_ROOT_USERNAME=mongo
       - MONGO_INITDB_ROOT_PASSWORD=mongo
+
+  inventory-service:
+    container_name: inventory-service
+    image: inventory-service:latest
+    ports:
+      - 8080:8080
+    networks:
+      - spring-cloud-network
+    depends_on:
+      - mongodb
+
+networks:
+  spring-cloud-network:
+    driver: bridge
