@@ -6,7 +6,7 @@ public class InventoryConstants {
     public static final String VALIDATION_STATUS = "validation_status";
     public static final String _ID = "_id";
     public static final String CEDANTS = "cedants";
-    public static final String GROUP_CEDANTS = "group_cedants";
+    public static final String GROUP_CEDANTS = "groups_cedants";
     public static final String CEDANT_GROUP_ID = "cedant.groups_cedants_id";
     public static final String CEDANT = "cedant";
     public static final String CEDANT_NAME = "cedant.name";
